@@ -19,6 +19,13 @@ This repository hosts the official preprint manuscripts, formal scientific worki
 
 All manuscripts are authored in rigorous, reproducible LaTeX (`.tex`) with complete BibTeX citation chains, vector figures, and mathematical derivations.
 
+### Academic Governance & Taxonomy Protocol
+
+All working papers in this archive strictly adhere to the [**Seek Key Working Paper Protocol & Governance (`GOVERNANCE.md`)**](GOVERNANCE.md):
+- **Three-Tier Evidence Hierarchy**: `〔实·账〕` Tier-1 Forensic Audit, `〔推·模〕` Tier-2 Analytical Model, and `〔设·辨〕` Tier-3 Adversarial Hypothesis;
+- **International Taxonomy Integration**: Full JEL Classification codes (Finance/Economics) and ACM/arXiv Subject Classes;
+- **Sovereign Consortium Authorship**: Licensed under Creative Commons Attribution 4.0 (CC BY 4.0).
+
 ### Automated Cloud Publishing Pipeline
 
 ```

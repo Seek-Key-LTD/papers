@@ -1,0 +1,38 @@
+name: Compile Academic Papers (LaTeX to PDF)
+
+on:
+  push:
+    branches: [ main ]
+    tags: [ 'v*' ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-papers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compile Working Paper 01 (XeLaTeX)
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          working_directory: papers/01-temporal-asymmetry-and-capital-training
+          latexmk_use_xelatex: true
+          args: -file-line-error -halt-on-error -interaction=nonstopmode
+
+      - name: Archive compiled PDF artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Seek-Key-Working-Papers
+          path: papers/**/main.pdf
+
+      - name: Upload PDF to GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: papers/**/main.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -49,7 +49,8 @@ All working papers in this archive strictly adhere to the [**Seek Key Working Pa
 
 | Paper ID | Title | Topics | Status | PDF |
 | :--- | :--- | :--- | :--- | :--- |
-| **SK-WP-2026-001** | **Temporal Asymmetry, Derivative Traps, and Capital Training in Fragmented Asian Equity Markets** | Market Microstructure, Calendar Asymmetry, CFFEX IF300, Behavioral Heuristics, Forensic Epistemology | `Preprint v1.0` | [Download PDF](../../releases) |
+| **SK-WP-2026-001** | **Temporal Asymmetry, Derivative Traps, and Capital Training in Fragmented Asian Equity Markets** | Market Microstructure, Calendar Asymmetry, CFFEX IF300, Behavioral Heuristics, Forensic Epistemology | `Published v1.0` | [Download PDF](../../releases) |
+| **SK-WP-2026-002** | **Naming as Join: An Initial Feature Protocol for Linguistic Auditing, Market Coordination, and Epistemological Networks** | Initial Feature Theory, Relational Semantics, Van der Waals Lexical Ties, Anti-Greenberg Protocol, Market Coordination | `Preprint v1.0` | [Download PDF](../../releases) |
 
 ---
 

@@ -1,0 +1,222 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=blue,
+    pdftitle={Naming as Join: An Initial Feature Protocol for Linguistic Auditing, Market Coordination, and Epistemological Networks},
+    pdfpagemode=FullScreen,
+}
+\usepackage{cite}
+\usepackage{microtype}
+\usepackage{setspace}
+\onehalfspacing
+
+\title{\textbf{Naming as Join: An Initial Feature Protocol for Linguistic Auditing, Market Coordination, and Epistemological Networks: \\ \large A Relational Algebra Formalization of Initial Letter Heuristics and Multi-Table Audit ledgers}}
+
+\author{
+    \textbf{The Seek Key Research Consortium}\thanks{Correspondence: \texttt{research@seekkey.ltd}. Sovereign corporate entity: Seek Key Ltd (United Kingdom). Coordination managed by the Epistemological Audit Taskforce, with forensic linguistic models validated across the Beijing Macro Lab and the Singapore Distributed Ledger Desk. This document establishes the foundational methodological protocol for the Initial Letter Theory (ILT) and relational naming systems within the Seek Key Working Paper Series. Hypotheses designated as [Adversarial] or [Theoretical] are subject to the Anti-Greenberg Protocol and do not assert ancestral cognacy without Tier-1 forensic auditing. CERN Zenodo Concept DOI: \href{https://doi.org/10.5281/zenodo.22761112}{10.5281/zenodo.22761112}. Licensed under CC BY 4.0.} \\
+    \textit{Working Paper Series in Forensic Epistemology and Linguistic Microstructure} \\
+    \textit{Report No. SK-WP-2026-002}
+}
+
+\date{September 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Linguistic nomenclature is conventionally treated as an analog of ontological reality, where lexical items are assumed to reflect continuous genealogical descent within monophyletic phylogenetic trees. In this paper, we refute the naive ``orthography-as-entity'' doctrine and formalize naming as a relational database $\text{JOIN}$ operation ($R \bowtie_{\theta} S$) across distributed, noisy socio-economic networks. We demonstrate that lexical tokens require no intrinsic genealogical cognacy to coordinate collective action; rather, phonological onset features ($I(w)$, the ``Initial Feature'') function as low-cognitive-cost candidate join indices ($C_{\text{retrieval}} \propto -\log P(\text{onset})$) that optimize memory recall and associative clustering under severe informational friction. Drawing on empirical market microstructure anomalies (e.g., A-share homophonic coordination phenomena: Obama--Aucma, Trump--Wisesoft) and cross-Eurasian trade lexicons, we prove that weak lexical ties (``Van der Waals lexical bonds'') generate binding macroeconomic realities. We formalize a four-tier evidence hierarchy, establish a multi-table relational graph model ($\mathcal{G} = (\mathcal{V}, \mathcal{E}, \mathbf{w})$) that supersedes the unilinear Proto-Indo-European (PIE) tree hierarchy, and formulate the \textit{Anti-Greenberg Protocol}—a strict falsification mechanism mandating an explicit $\text{UNKNOWN}$ state for unverified correspondences. Finally, we derive testable empirical predictions regarding consonant onset retention asymmetries ($R_{\text{onset}} > R_{\text{medial}} \ge R_{\text{final}}$) across historical trade corridors.
+\end{abstract}
+
+\vspace{0.5em}
+\noindent \textbf{Keywords:} Relational Semantics, Initial Feature Theory, Linguistic Microstructure, Candidate Join Keys, Van der Waals Lexical Bonds, Anti-Greenberg Protocol, Market Coordination.
+
+\vspace{1em}
+\begin{center}
+\small
+\begin{tabular}{ll}
+\toprule
+\textbf{Paper Identifier:} & SK-WP-2026-002 \\
+\textbf{Evidence Tier:} & \textbf{〔实·账 / 推·模 / 设·辨〕} Tier-1 Empirical Data, Tier-2 Relational Algebra, Tier-3 Linguistic Heuristics \\
+\textbf{JEL Classifications:} & D83 (Search, Learning, Communication), G14 (Information \& Market Efficiency), G40 (Behavioral Finance), Z13 (Social Networks) \\
+\textbf{Subject Classes:} & cs.CL (Computation and Language), cs.MA (Multi-Agent Systems), physics.soc-ph (Physics \& Society), econ.TH (Theoretical Economics) \\
+\textbf{Permanent DOI:} & \href{https://doi.org/10.5281/zenodo.22761112}{10.5281/zenodo.22761112} (Concept) / \href{https://doi.org/10.5281/zenodo.22761113}{10.5281/zenodo.22761113} (Series) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\newpage
+
+\section{Introduction: The Coordination Paradox and Folk Heuristics}
+
+A central dogma of classical epistemology and historical linguistics posits that names mirror real essences, ancestral lineages, or stable ontological categories \cite{kripke1980naming, campbell2013historical}. Under the comparative method, lexical resemblances across languages are rigorously scrutinized to reconstruct unilinear phylogenetic trees, wherein common phonological shapes signify common biological or cultural ancestors. 
+
+However, in real-world human coordination, distributed agents routinely coordinate large-scale capital, military mobilization, and institutional allegiance based on superficial phonetic similarities that possess zero genealogical validity. Consider the recurring anomaly observed in the Chinese retail equity market (A-shares):
+\begin{itemize}
+    \item During the 2008 United States presidential election, shares of Aucma (\textit{Aokema}, 600336.SH)—a domestic manufacturer of household refrigeration appliances—surged to their daily 10\% upper limit upon the electoral victory of Barack Obama (\textit{Aobama});
+    \item During the 2016 and 2024 United States presidential elections, shares of Wisesoft (\textit{Chuanda Zhisheng}, 002253.SZ)—a software provider whose Mandarin name sounds homophonous to ``Trump achieves grand victory'' (\textit{Chuan-da-zhi-sheng})—experienced immediate liquidity inflows and limit-up price locks;
+    \item Conversely, domestic consumer brands such as Haers Vacuum Bottle (\textit{Ha'ersi}, 002615.SZ) fluctuated in sync with political polling trajectories of Kamala Harris.
+\end{itemize}
+
+Standard neoclassical finance \cite{fama1970efficient} dismisses such events as irrational noise \cite{shiller2000irrational, barber2009systematic}. Yet, from an information-theoretic and coordination perspective, these phenomena reveal a fundamental principle:
+\begin{quote}
+\textbf{Theorem of Weak-Tie Realism:} A symbolic token does not need an ontological or physical identity with an object to serve as a coordination interface for multi-agent equilibrium. A weak association is not historical ``truth,'' yet it systematically manufactures economic reality.
+\end{quote}
+
+This paper resolves this apparent paradox by formalizing the \textbf{Initial Feature Theory} (often termed the ``Initial Letter Theory'' or ILT in historical heuristics) as a candidate index in relational algebra. We demonstrate that naming is neither mere representation nor naive signifier; \textbf{naming is a relational database $\text{JOIN}$ operation}.
+
+\section{Against ``Orthography as Ontology'': The Ledger Fallacy}
+
+\subsection{The Disconnect Between Ledger and Physical Asset}
+In forensic accounting, an asset title recorded on a balance sheet is never identical to the physical productive apparatus itself. It is a contractual pointer. Similarly, in philology, confusing the written graph with the underlying acoustic event is an elementary category mistake:
+\begin{equation}
+    \text{Graph}(w) \neq \text{Phoneme}(w) \neq \text{Referent}(w)
+\end{equation}
+In antiquity, before the invention of electroacoustic recording devices, written records (epigraphy, cuneiform tablets, oracle bones, papyri) represented lossy encodings produced by elite scribal classes. To treat a standardized orthographic string as an unmediated physical sound wave is to mistake an accounting ledger entry for physical gold bullion.
+
+\subsection{Chinese Paleography as a High-Dimension Error-Correcting Code}
+Chinese script provides an empirical demonstration of this decoupling. As reconstructed in modern historical phonology \cite{baxter2014old}, Old Chinese featured complex consonant clusters (e.g., $*k\text{-}, *s\text{-}, *p\text{-}, *m\text{-}$) that evolved radically into Middle Chinese and contemporary topolects. Yet, because the logographic writing system encoded semantic determinatives alongside phonetic spellers (\textit{xiesheng}), scribes preserved associative semantic linkages across thousands of kilometers despite mutually unintelligible oral dialects. The writing system acted not as a transcript of acoustic waves, but as a fault-tolerant routing header across divergent local trade nodes.
+
+\section{The Covalent Fallacy: Limits of Monophyletic Tree Models}
+
+Historical linguistics in the 19th and 20th centuries was dominated by the Indo-European comparative paradigm. While the Neogrammarian regular sound laws represent a pinnacle of formal philology, their uncritical generalization into a universal doctrine of unilinear descent produces what we term the \textbf{Covalent Fallacy}: the assumption that all cross-linguistic lexical similarities must arise from rigid genealogical speciation (the ``single tree'' model).
+
+\begin{table}[h]
+\centering
+\small
+\caption{Taxonomy of Chemical Metaphor in Lexical Associations}
+\label{tab:chemical_bonds}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Bond Type} & \textbf{Linguistic Mechanism} & \textbf{Audit Rigor} & \textbf{Applicable Domain} \\ \midrule
+\textbf{Covalent Bond} & Strict Neogrammarian Sound Laws & Formal regular correspondence & Deep genetic core vocabulary (PIE, Sino-Tibetan) \\
+\textbf{Ionic Bond} & Direct Institutional Lexical Transfer & Historical administrative decree & Bureaucratic titles, official weights and measures \\
+\textbf{Hydrogen Bond} & Contact Diffusion and Sprachbund & Areal convergence & Balkan linguistic area, East Asian Sinosphere \\
+\textbf{Van der Waals} & Initial Feature Candidate Associative Recall & Probabilistic candidate key & Trade vernaculars, mercenary slangs, market puns \\ \bottomrule
+\end{tabular}
+\end{table}
+
+The Proto-Indo-European (PIE) paradigm frequently succumbs to an interpretive monopoly: whenever a phonetic resemblance appears along the Eurasian steppe or Silk Road corridors, theorists attempt to force it into a covalent PIE ancestral root, ignoring horizontal contagion, commercial pidgins, and substrate borrowing.
+
+\section{Van der Waals Forces: Initial Feature as Candidate Recall Index}
+
+To formalize the cognitive mechanics of folk heuristics and commercial terminology, we introduce the concept of \textbf{Van der Waals Lexical Connections}. 
+
+\subsection{Cognitive Search Cost and Shannon Entropy}
+In human speech perception and lexical access, phonological processing is strictly asymmetric. According to the cohort model of speech perception, the onset consonant of a word narrows down the candidate search space far more rapidly than internal vowels or terminal codas.
+
+Let $W$ denote the lexical lexicon, and let $w \in W$. Let $I(w)$ denote the initial phonological feature (the onset). The cognitive search cost $C_{\text{retrieval}}(w)$ is bounded by the conditional entropy of the lexicon given the onset:
+\begin{equation}
+    H(W \mid I(w)) = -\sum_{i} P(I(w) = i) \sum_{w \in W_i} P(w \mid i) \log_2 P(w \mid i)
+\end{equation}
+Because the human ear receives phonemes sequentially in time, the onset functions as a low-cost filter:
+\begin{equation}
+    C_{\text{retrieval}}(w) \approx -\kappa \log_2 P(I(w)) + \mathcal{O}(1)
+\end{equation}
+For a nomadic trader, mercenary, or retail investor operating under high cognitive load, matching an unknown foreign entity using its onset requires minimal energy. Thus, words sharing an initial onset (e.g., the *K-cluster: \textit{Kunlun}, \textit{Kulun}, \textit{Khan}, \textit{Qing}, \textit{Corral}) act as mutual associative attractors.
+
+\begin{quote}
+\textbf{Crucial Methodological Boundary:} The Initial Feature $I(w)$ is a \textbf{Candidate Recall Index (召回索引)}, NOT a Primary Key (主键), and NOT a proof of genealogical cognacy (同源证明).
+\end{quote}
+
+\section{Formal Relational Algebra: Naming as Join}
+
+We now cast the act of naming into Edgar F. Codd's relational calculus \cite{codd1970relational}.
+
+\subsection{The Join Formulation}
+Let $\mathcal{R}_{\text{obs}}(E_{\text{id}}, \text{Attr}, I_{\text{feat}})$ be a relation representing observed physical or cultural entities. Let $\mathcal{S}_{\text{lex}}(\text{Token}_{\text{id}}, \text{Phonology}, I_{\text{feat}}, \text{LedgerRole})$ be a relation representing available lexical tokens in the linguistic registry.
+
+When a society names a newly encountered phenomenon (or when retail capital identifies a political candidate with an equity ticker), it executes a relational join:
+\begin{equation}
+    \mathcal{J} = \mathcal{R}_{\text{obs}} \bowtie_{\theta(I_{\text{feat}})} \mathcal{S}_{\text{lex}}
+\end{equation}
+where $\theta(I_{\text{feat}})$ is a similarity predicate defined over the feature space:
+\begin{equation}
+    \theta(I_{\text{feat}}): \text{dist}(I(\text{entity}), I(\text{token})) \le \epsilon
+\end{equation}
+
+\subsection{The Political Economy of the Naming Class}
+Naming is an act of sovereign power. Historically, the \textbf{Naming Class} (clerisy, imperial chancelleries, priests, and central bank committees) maintained sovereignty by dictating which relational joins were legitimate:
+\begin{equation}
+    \text{Legitimacy}(\mathcal{J}) = \mathbf{1}_{\{\text{Authority} \in \text{Sovereign}\}}
+\end{equation}
+When the sovereign monopolizes the join predicate, institutional rent is extracted. When decentralized networks or markets emerge, retail participants deploy horizontal joins, reclaiming the right to attach value to arbitrary phonetic handles.
+
+\section{The Multi-Table Audit Architecture}
+
+To replace the single phylogenetic tree with an auditable data structure, we define the \textbf{Epistemological Audit Graph} $\mathcal{G} = (\mathcal{V}, \mathcal{E}, \mathbf{W})$:
+\begin{itemize}
+    \item $\mathcal{V}$: Nodes representing distinct historical lemmas, inscriptions, or market tickers;
+    \item $\mathcal{E}$: Directed hyper-edges representing hypothesized connections (borrowing, cognacy, trade pidgin, associative pun);
+    \item $\mathbf{W}$: An audit vector $\mathbf{e} = [e_{\text{text}}, e_{\text{arch}}, e_{\text{phon}}, e_{\text{econ}}]^T \in [0, 1]^4$.
+\end{itemize}
+
+\begin{table}[h]
+\centering
+\small
+\caption{The Three-Tier Evidence Hierarchy for Linguistic Auditing}
+\label{tab:evidence_tiers}
+\begin{tabular}{@{}llp{8.5cm}@{}}
+\toprule
+\textbf{Tier} & \textbf{Descriptor} & \textbf{Methodological Criteria and Constraints} \\ \midrule
+\textbf{Tier-1} & \textbf{〔实·账〕} Forensic Audit & Verifiable epigraphic records, dated coins, bilateral treaty ledgers, unbroken transmission records. Zero conjectural reconstruction permitted. \\
+\textbf{Tier-2} & \textbf{〔推·模〕} Formal Model & Formally closed mathematical or phonological sound-law derivations (e.g., Grassmann's law, Grimm's law, Old Chinese Baxter-Sagart models). \\
+\textbf{Tier-3} & \textbf{〔设·辨〕} Adversarial Heuristic & Initial Feature exploratory linkages, Van der Waals associative networks, geopolitical structural conjectures. Mandatory disclaimer required. \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\section{The Anti-Greenberg Protocol: Mandating the NULL State}
+
+A critical weakness of long-range linguistic comparison (exemplified by Joseph Greenberg's mass lexical comparison \cite{greenberg1987language}) is the unchecked proliferation of false positives. As demonstrated by Ringe \cite{ringe1992calculating}, if one searches a sufficiently large set of languages without requiring strict sound laws, chance homophonic collisions approach a probability of 1.0.
+
+To safeguard against this methodological failure, we establish the \textbf{Anti-Greenberg Protocol}:
+\begin{enumerate}
+    \item \textbf{No Black-Box Joins}: Cognitive intuition or phonetic gut-feel cannot establish an edge in the audit graph $\mathcal{G}$;
+    \item \textbf{Mandatory NULL Column}: A mature scientific database is not evaluated by its ability to force an explanation onto every mystery. It is evaluated by its rigor in recording unproven connections as explicitly \texttt{UNKNOWN} (NULL);
+    \item \textbf{Candidate $\neq$ Cognate}: An initial feature match $I(w_1) \approx I(w_2)$ is classified as a Candidate Recall item until validated by Tier-1 or Tier-2 evidence.
+\end{enumerate}
+
+\section{Falsifiable Predictions and Empirical Protocols}
+
+To ensure that Initial Feature Theory does not degenerate into unfalsifiable storytelling, we articulate three concrete empirical propositions:
+
+\subsection{Proposition 1: Positional Consonantal Retention Asymmetry}
+Across cross-linguistic loanword corridors (e.g., Sogdian to Middle Chinese, or Semitic to Hellenic alphabetic adoptions), the retention probability of word-initial consonants ($R_{\text{onset}}$) is strictly greater than internal or final consonants:
+\begin{equation}
+    R_{\text{onset}} > R_{\text{medial}} \ge R_{\text{final}}
+\end{equation}
+
+\subsection{Proposition 2: Trade Corridor Network Radius}
+The geographic diffusion radius of initial consonant clusters correlates positively with commercial exchange volume and negatively with physical topographic friction:
+\begin{equation}
+    \text{Radius}(I(w)) \propto \frac{\text{Trade Volume}}{\text{Topographic Impedance}}
+\end{equation}
+
+\subsection{Proposition 3: Permutation Null Model in Equity Microstructure}
+In financial markets, the excess return $\alpha_i(t)$ of homophonic ticker sets during geopolitical macro-announcements exceeds the 99th percentile of a Monte Carlo permutation test generated by randomly shuffling ticker labels across trading sectors:
+\begin{equation}
+    P\left( \alpha_{\text{homophone}} > \alpha_{\text{permutation}} \right) < 0.01
+\end{equation}
+
+\section{Conclusion: The Relational Imperative}
+
+We conclude with the fundamental epistemological maxim of the Seek Key Research Consortium:
+\begin{quote}
+\textit{Naming is not representation; Naming is a Join operation.}
+\end{quote}
+Whether in the forensic analysis of ancient steppe nomenclature, the decipherment of Silk Road commercial trade registers, or the high-frequency tick dynamics of fragmented emerging equity markets, human agents navigate uncertainty through low-cost indexical joins. By replacing monophyletic biological tree dogmas with auditable multi-table relational graphs, we establish an empirical, falsifiable foundation for linguistic microstructure and economic coordination.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,26 @@
+name: Sync to GitHub Mirror (ash3 Runner)
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - '*'
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: [ ash3 ]
+    steps:
+      - name: Checkout full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Push branches and tags to GitHub
+        run: |
+          git remote add github-upstream "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/Seek-Key-LTD/papers.git" || git remote set-url github-upstream "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/Seek-Key-LTD/papers.git"
+          echo "🚀 Pushing branch to GitHub..."
+          git push github-upstream main
+          echo "🏷️ Pushing tags to GitHub..."
+          git push github-upstream --tags

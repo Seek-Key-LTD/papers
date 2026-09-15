@@ -1,6 +1,6 @@
 # Seek Key Academic Papers & Forensic Working Papers Archive
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22761113.svg)](https://doi.org/10.5281/zenodo.22761113)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22761113-007ec6?logo=doi)](https://doi.org/10.5281/zenodo.22761113)
 [![Compile Papers (LaTeX to PDF)](https://github.com/Seek-Key-LTD/papers/actions/workflows/compile-papers.yml/badge.svg)](https://github.com/Seek-Key-LTD/papers/actions/workflows/compile-papers.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 

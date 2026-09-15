@@ -1,5 +1,6 @@
 # LaTeX build artifacts
-*.pdf
+main.pdf
+!SK-WP-*.pdf
 *.aux
 *.bbl
 *.bcf

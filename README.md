@@ -43,6 +43,20 @@ All working papers in this archive strictly adhere to the [**Seek Key Working Pa
  (Auto-compile PDF)     (Permanent Global DOI Assignment)
 ```
 
+### Synchronization and Release Rules
+
+The Gitea repository is the canonical source. A push to `main` triggers the
+Gitea Runner to mirror the same commit SHA to GitHub; a local `git commit` or
+a push to a feature branch does not trigger synchronization. Git tags are also
+mirrored, but a tag alone does not create a DOI.
+
+The required order is: write and review in Overleaf, merge the accepted
+revision into Gitea `main`, verify the GitHub mirror, then create an approved
+release tag. Only an approved release/tag may be archived by Zenodo and receive
+a DOI. Revision review and bonus accounting are separate from DOI assignment.
+
+See the complete protocol in [`docs/PAPER-FLOW.md`](docs/PAPER-FLOW.md).
+
 ---
 
 ## 📚 Papers Index

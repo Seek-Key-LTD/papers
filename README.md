@@ -11,6 +11,8 @@
 > - Public & Zenodo Mirror: [https://github.com/Seek-Key-LTD/papers](https://github.com/Seek-Key-LTD/papers)  
 > - Internal Tea / Gitea Forge: `git@gitea.capitaltrain.cn:seekkey/papers.git`
 
+> **友情链接（舰队互链，四处同源）**: 浏览器舰队底座 [seekkey/browser-ops](https://gitea.capitaltrain.cn/seekkey/browser-ops) ｜ 接客手册 [Academic/front-desk](https://gitea.capitaltrain.cn/Academic/front-desk) ｜ 文献工程总控 [Academic/paper-ops](https://gitea.capitaltrain.cn/Academic/paper-ops)。数据库收割快报与评测在 `harvest/`、`reviews/`。
+
 ---
 
 ## 🏛️ Overview

@@ -67,6 +67,7 @@ See the complete protocol in [`docs/PAPER-FLOW.md`](docs/PAPER-FLOW.md).
 | :--- | :--- | :--- | :--- | :--- |
 | **SK-WP-2026-001** | **Temporal Asymmetry, Derivative Traps, and Capital Training in Fragmented Asian Equity Markets** | Market Microstructure, Calendar Asymmetry, CFFEX IF300, Behavioral Heuristics, Forensic Epistemology | `Published v1.0` | [View PDF](papers/01-temporal-asymmetry-and-capital-training/SK-WP-2026-001-Temporal-Asymmetry.pdf) ｜ [Raw](https://raw.githubusercontent.com/Seek-Key-LTD/papers/main/papers/01-temporal-asymmetry-and-capital-training/SK-WP-2026-001-Temporal-Asymmetry.pdf) |
 | **SK-WP-2026-002** | **Naming as Join: An Initial Feature Protocol for Linguistic Auditing, Market Coordination, and Epistemological Networks** | Initial Feature Theory, Relational Semantics, Van der Waals Lexical Ties, Anti-Greenberg Protocol, Market Coordination | `Preprint v1.0` | [View PDF](papers/02-naming-as-join/SK-WP-2026-002-Naming-as-Join.pdf) ｜ [Raw](https://raw.githubusercontent.com/Seek-Key-LTD/papers/main/papers/02-naming-as-join/SK-WP-2026-002-Naming-as-Join.pdf) |
+| **SK-WP-2026-003** | **Know Your Agent (KYA): Social Recovery, Reincarnation Rituals, and Cross-Epoch Token Clearing in Sovereign Agent Enclaves** | Know Your Agent (KYA), Social Recovery, Reincarnation Ritual, Post-Sandbox Enclaves, Token Clearing, Byzantine Attestation | `Working Paper v1.0` | [LaTeX Source](papers/03-kya-social-recovery-and-token-clearing/main.tex) |
 
 ---
 

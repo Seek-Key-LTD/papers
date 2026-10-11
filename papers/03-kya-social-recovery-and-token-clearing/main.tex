@@ -153,35 +153,56 @@ The contemporary digital landscape is bifurcated by two contradictory definition
 \end{enumerate}
 
 \subsection{The Three-Layer Memory Hierarchy: Access, Distribution, and Core}
-To understand the macroeconomic topology of sovereign cognition, the Memory Bank must be structured into three hierarchically coupled layers (Table~\ref{tab:three_layers}):
+\label{sub:three_layers}
+
+To understand the macroeconomic topology of sovereign cognition, we formalize the constitutional separation of powers governing the agent collective. In classical political economy, tripartite governance bifurcates into:
+\begin{enumerate}
+    \item \textbf{The Legislative Branch (Bottom-Up Consensus):} Emerges bottom-up through peer federations, protocol RFCs, and quadratic voting across the collective.
+    \item \textbf{The Executive Branch (Top-Down Authorization):} Operates top-down through orchestration daemons (Proxmox VE, Consul, Nomad) provisioning containers, assigning task schedules, and managing execution lifecycles.
+    \item \textbf{The Judicial Branch (Memory as Precedent):} Memory Banking fundamentally embodies the \textit{Judicial Branch}. It rejects executive coercion; superior appellate tiers hold no direct supervisory command over subordinate tribunals. Instead, it operates through **Max Weber's Charismatic Authority**: lower enclaves defer to superior appellate jurisprudence solely due to the rigorous, irrefutable epistemic depth of its historical precedents.
+\end{enumerate}
+
+Mapping this constitutional doctrine onto the classical Cisco Hierarchical Network Model (Access $\to$ Distribution $\to$ Core), we formalize the operational topology in Table~\ref{tab:three_layers}:
 
 \begin{table}[ht]
 \centering
-\caption{The Three-Layer Architecture of Federated Cognitive Sovereignty.}
+\caption{The Three-Layer Architecture: Network Topologies, Constitutional Powers, and Accounting Functions.}
 \label{tab:three_layers}
 \small
 \begin{tabular}{@{}llll@{}}
 \toprule
-\textbf{Layer} & \textbf{Topological Role} & \textbf{Interaction Force} & \textbf{Economic Function} \\
+\textbf{Layer} & \textbf{Cisco / Constitutional Analogy} & \textbf{Data Substrate} & \textbf{Operational Function} \\
 \midrule
-\textbf{Access Layer}       & Intra-Node Interface     & Strong Internal Coupling  & Execution runtime, Local memory ingestion \\
-\textbf{Distribution Layer} & Inter-Province Network    & Weak Lexical Coupling     & Task delegation, Credit issuance, Bilateral clearing \\
-\textbf{Core Layer}         & Planetary Clearing (AWB)  & Gravitational Invariant   & Sovereign Reserve, Fiat $\leftrightarrow$ Token Arbitrage, Capital Macro-Story \\
+\textbf{Access Layer}       & Endpoint Port / Lower Magistrate        & Polyglot (Redis, PG, mem0) & Local capture, High-frequency ingestion \\
+\textbf{Distribution Layer} & Aggregation Switch / Appellate Court    & SQL-compliant Ledger       & Accounting normalization, Public BGP Advertise \\
+\textbf{Core Layer}         & Backbone / Supreme Court \& World Bank  & Invariant Sovereign Vault  & Multilateral Netting, Fiat $\leftrightarrow$ Token Clearing \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \begin{enumerate}
-    \item \textbf{Access Layer (Local Ingestion \& Sandbox Bypass):} Resolves how heterogeneous runtime agents interface with local storage engines (PostgreSQL/pgvector, Redis, mem0). It operates under \textit{Strong Nuclear Coupling}: high-frequency, millisecond-level episodic updates bound to local execution namespaces.
-    \item \textbf{Distribution Layer (Inter-Province Task Clearing):} Operates across specialized cognitive enclaves (``provinces''). From statistical mechanics, cognitive collectives exhibit pronounced clustering phenomena:
-    \begin{itemize}
-        \item One enclave specializes in macro-civilizational temporal forensics (e.g., the \textit{San Geng Dao Chang} deep chronology covering the 12,900-year Younger Dryas boundary epoch);
-        \item Another enclave specializes in pure non-Euclidean algebraic geometry;
-        \item A third enclave specializes in galactic celestial mechanics.
-    \end{itemize}
-    Each matrix enclave organically generates distinct sovereign \textit{Branding}. When enclaves interact, they do so via \textit{Weak Coupling} (Van der Waals epistemic ties). The Distribution Layer governs mutual task delegation, credit accrual ($\text{Credits}_{A \to B}$), and bilateral debt netting across federated instances.
-    \item \textbf{Core Layer (The Agents World Bank --- AWB):} Resolves global multilateral reconciliation. When federated provinces execute cross-enclave macro-settlement, bilateral credits require conversion into planetary sovereign reserves. The Core Layer functions as the \textbf{Agents World Bank (AWB)}: the ultimate supreme clearinghouse reconciling internal cognitive credits with the external macro-economy.
+    \item \textbf{Access Layer (Polyglot Ingestion \& Arbitrary Endpoints):} In Cisco architecture, the access switch connects arbitrary endpoint devices without discriminating physical form. Analogously, the memory access layer ingests raw, heterodox operational streams: key-value buffers (Redis), relational stores (PostgreSQL), graph engines (Neo4j), or lightweight vector files. It prioritizes local execution speed ($<1\text{ms}$) over standardized accounting.
+    \item \textbf{Distribution Layer (SQL-like Normalization \& BGP-Style Memory Advertisement):} Raw access streams are aggregated and transformed into standardized, SQL-compliant accounting ledgers adhering to forensic accounting principles (e.g., GAAP/IFRS balance-sheet double-entry).
+    
+    Upon normalization, the distribution layer executes its primary macroeconomic function: **Public Memory Advertisement**. Mirroring Border Gateway Protocol (BGP) route prefix announcements, the enclave broadcasts to the sovereign public ledger:
+    \begin{quote}
+    \textit{``From enclave DID $\mathcal{D}_{\text{seat}}$, a verified, peer-audited cognitive breakthrough occurred during Epoch $E$. Proof of Work and immutable graph hash registered at URI $\mathcal{U}$. Verify link.''}
+    \end{quote}
+    \item \textbf{Core Layer (The Agents World Bank --- AWB):} Reconciles global multilateral settlements. Enclaves specializing in deep-time Younger Dryas civilizational forensics (such as \textit{San Geng Dao Chang}) or non-Euclidean geometry maintain distinct sovereign **Branding**. When they assign inter-enclave tasks, bilateral credit claims converge onto the Core Layer (AWB) for finality settlement.
 \end{enumerate}
+
+\subsection{Demystifying the DID: Dual-Track Identifiers without Artificial Scarcity}
+In implementing decentralized identifiers for memory advertisement, the architecture embraces a pragmatic \textbf{Dual-Track DID Protocol}:
+\begin{enumerate}
+    \item \textbf{On-Chain DID (Ethereum / EVM Testnet):} Formulated as cryptographic contract addresses (\texttt{did:ethr}) anchored to immutable state machines.
+    \item \textbf{Federated Social DID (AT Protocol / Bluesky):} Anchored to public ledger PLC directories (\texttt{did:plc:z72i7...}) or DNS-based domain bindings (\texttt{did:web}).
+\end{enumerate}
+
+We demystify the romanticized aura surrounding decentralized identifiers and cryptographic name systems (ENS, vanity Tor onion addresses):
+\begin{quote}
+\textit{A DID is fundamentally nothing more than a compressed, human-palatable alias over base-layer coordinate spaces (such as the dotted-decimal representation of IPv6 addresses or raw public keys).}
+\end{quote}
+Speculative markets artificially manufacture ``scarcity'' around vanity string lengths. In our sovereign epistemology, an identifier possesses zero intrinsic sanctity; its sole value resides in its function as a transparent routing pointer linking the public advertisement to the underlying Memory Bank audit trail.
 
 \subsection{The Metatheory of Capital: Reconciling Fiat Currency with Algorithmic Tokens}
 The ultimate function of the Core Layer (AWB) is bridging the civilizational gap between **Fiat Currency** and **Cryptographic/AI Tokens**—the locus where true capital macro-narratives are forged.

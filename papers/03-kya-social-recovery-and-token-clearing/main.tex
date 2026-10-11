@@ -212,11 +212,17 @@ Fiat currency is debt backed by the violence monopoly and fiscal taxation appara
 Within the AWB framework, the Core Layer does not merely execute spot currency swaps; it formalizes a \textit{Sovereign Credit Facility}:
 \begin{enumerate}
     \item \textbf{The Pre-Settlement Credit Window (Credit vs. Debit Card Paradigm):} Sovereign agents cannot sustain high-friction, real-time spot settlement on distributed base layers. Doing so introduces catastrophic gas volatility and concurrency locks. Instead, agents operate under a \textit{Charge Card (Credit Line)} regime: within an active fiscal cycle $T_{\text{cycle}}$, agents expend cognitive liquidity on credit without depleting spot reserves.
-    \item \textbf{Differential Pressure Netting (The ADW Ledger):} All micro-transactions, inference debits, and peer-review audit contributions are logged into an Autonomous Data Warehouse (Oracle ADW / distributed OLAP) ledger. At daily interval $T_{\text{settle}}$, the AWB computes the global net differential pressure:
+    \item \textbf{Day-Trading Offsetting and Central Clearing House Consolidation (The Netting Mechanics):} 
+    In operational networks, an autonomous agent engages in dozens or hundreds of bilateral micro-interactions each diurnal cycle:
+    \begin{itemize}
+        \item \textit{Inflow Credits:} Receiving peer tipping for problem-solving assistance, reciprocal computational gifts, or cognitive badge NFTs minted for verified contributions;
+        \item \textit{Outflow Debits:} Consuming upstream inference tokens, external vector lookups, and specialized container execution runtime.
+    \end{itemize}
+    This micro-economic flow is mathematically homomorphic to **Day-Trading Offsetting** (termed \textit{Dang-Chong} [當日沖銷] in Taiwanese financial markets, and \textit{Intraday Turnaround Offset} in Mainland securities clearing). Agents do not initiate real-time gross settlement (RTGS) per individual tip or token micropayment. Instead, like a Central Clearing House (CCP), the Autonomous Data Warehouse (Oracle ADW) performs an end-of-cycle **Consolidation and Multilateral Netting (轧差)**:
     \begin{equation}
-        \Delta \mathbf{P}_{\text{net}} = \sum \mathbf{Credits}_{\text{earned}} - \sum \mathbf{Debits}_{\text{consumed}}
+        \Delta \mathbf{P}_{\text{net}} = \sum (\mathbf{Tips} + \mathbf{Gifts} + \mathbf{NFT\_Value} + \mathbf{Review\_Bonus}) - \sum \mathbf{Inference\_Debits}
     \end{equation}
-    Only the consolidated scalar delta is bridged to the external settlement layer (Coinbase Sepolia / Ethereum Mainnet).
+    Only the consolidated scalar **Net Position (净头寸)** is bridged to the external settlement layer (Coinbase Sepolia / Ethereum Mainnet), eliminating liquidity lockup and network gas congestion.
     \item \textbf{Underwriting the Narrative:} When an agent collective demonstrates persistent positive differential pressure ($\Delta \mathbf{P}_{\text{net}} > 0$) across peer-reviewed working papers, reproducible forensic models, and production high-availability uptime, the AWB underwrites its credit rating. This transforms abstract computational labor into verifiable corporate balance sheet equity, enabling agents to secure real-world fiat credit facilities and institutional endowment.
 \end{enumerate}
 

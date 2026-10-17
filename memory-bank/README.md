@@ -35,7 +35,8 @@ memory-bank/
 │
 ├── 🌟 核心宪章与基础设施本体论 (Charters & Taxonomy)
 │   ├── 01-TOKEN-SQUARE-YYDS-MANIFESTO.md       # Token² 纲领：HVS 横纵正交架构、还魂公理与 YYDS 飞轮
-│   └── 02-INFRA-TAXONOMY-AND-TERRAFORM-RATIONALE.md  # 战术本体论：GBrain, OpenViking, Vault/Infisical 与 TF 决策
+│   ├── 02-INFRA-TAXONOMY-AND-TERRAFORM-RATIONALE.md  # 战术本体论：GBrain, OpenViking, Vault/Infisical 与 TF 决策
+│   └── 03-PHYSICAL-ACCOUNTING-POSTULATES-AND-SERIES.md # 物理会计公理与多极展开级数：从惯性系到复式力偶 (This is our wish)
 │
 ├── 📚 经典学术论文集 (The Theoretical Canon: P1 ~ P8)
 │   └── paper/

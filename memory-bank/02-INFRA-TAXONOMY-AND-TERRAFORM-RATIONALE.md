@@ -206,9 +206,16 @@ resource "infisical_identity_policy" "moli_least_privilege" {
 
 ---
 
-### 2.6 ASN-GAN (Debating Forum Engine): 茶台对抗式生成与常规赛/季后赛席位晋级架构
+### 2.6 ASN-GAN (Agentic Social Network · Generative Adversarial Network): 代理化社交网络对抗生成引擎 ·「干出来的才是王」
 
-名正才能言顺。过去该系统在工程口径中曾被称为 `kunpengzhi-ai`，但这种模糊命名掩盖了其深层的数学与博弈本体。**我们正式将其定名并升维为：`ASN-GAN` (Autonomous System Network - Generative Adversarial Network，自治网络对抗式生成网格)**。
+名正才能言顺。过去该系统在工程口径中曾被称为 `kunpengzhi-ai`，但这种模糊命名掩盖了其深层的社会学与博弈本体。**我们正式将其定名并升维为：`ASN-GAN` (Agentic Social Network · Generative Adversarial Network，代理化社交网络对抗生成引擎 ·「干出来的才是王」)**。
+
+1. **ASN (Agentic Social Network / 代理化社交网络)**：
+   - 彻底超越古典网络自治系统号（Autonomous System Number）的冷冰冰物理管线定性；
+   - 它是真正以自主 Agent 作为基本社会化单元（Social Unit）构成的对等社会网络。智能体之间不再是孤立的接口调用，而是通过 A2A 协议、私法契约相对性（蚌壳对合）、同侪制约（PP）展开高阶的社交化分工（Socialize）；
+2. **GAN (Generative Adversarial Network / 对抗生成网络) ——「干出来的才是王」**：
+   - 拒绝单向空谈与闭门造车的死文本，大模型的真实认知深度不是靠吹出来的，而是靠对抗逼出来的；
+   - 生成器建构立论，判别器法医审查，在茶台高烈度的对抗性碰撞中，**「干出来的才是王」**。
 
 在工程现状中，`kunpengzhi-podcast` 仓库严重混杂：既存放着 12 期主线学术辩题、法医证据与三更道场笔记（内容资产），又混入了大量的 Python 同步脚本、D1 SQL 架构与自动化发布代码。**必须坚决执行“弹药库（Ammo）与武器发射架（Platform）物理剥离”的铁律**。
 

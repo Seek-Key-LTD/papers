@@ -62,7 +62,10 @@ memory-bank/
 - **`OpenViking` (Walkie-Talkie & Armory 对讲机与动态军械库)**：随身对讲机呼叫与热插拔技能装备库。**端侧零依赖，用完即销**；
 - **`Vault` (The Deep Vault 地下金库)**：冷备份与根私钥。**绝对私网隔离，防边缘提权沦陷**；
 - **`Infisical` (Distribution Station 前哨分粮站)**：统一项目 `landing` + 机器身份单向凭证注入。**专事短期凭证分发**；
-- **`Key-Agent / ADK-Go` (Resident Steward 驻留管家)**：40 元二手硬件的 Soul 宿主。**同核异挂，单机独立 `$HOME`**。
+- **`Key-Agent / ADK-Go` (Resident Steward 驻留管家)**：40 元二手硬件的 Soul 宿主。**同核异挂，单机独立 `$HOME`**；
+- **`Mastodon via CF` (Frontstage 前台表演层)**：小花组公网可见窗口，ActivityPub 外交宣告与存活证明。CF 边缘掩蔽防 DDoS；
+- **`Matrix` (Backstage Crypt 后台密电暗室)**：对外不宜公开的跨机房争议、策略调度走 E2EE 端到端加密；
+- **`Riverone MySQL` (Sub-stage 深层机器内语)**：微秒级任务锁竞争与借贷对冲，私网直连原子事务，物理零公网暴露。
 
 ### 3. PP 同侪制约 (Peer Pressure)
 - 放弃不可靠的中心化审查监军；

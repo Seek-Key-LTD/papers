@@ -206,9 +206,11 @@ resource "infisical_identity_policy" "moli_least_privilege" {
 
 ---
 
-### 2.6 鲲鹏志 AI (Debating Forum): 辩题弹药库与辩论引擎的解耦拓扑
+### 2.6 ASN-GAN (Debating Forum Engine): 茶台对抗式生成与常规赛/季后赛席位晋级架构
 
-在当前的工程现状中，`kunpengzhi-podcast` 仓库严重混杂：既存放着 12 期主线学术辩题、法医证据与三更道场笔记（内容资产），又混入了大量的 Python 同步脚本、D1 SQL 架构与自动化发布代码。**这违背了“弹药库（Ammo）与武器平台（Platform）分离”的工程铁律**。
+名正才能言顺。过去该系统在工程口径中曾被称为 `kunpengzhi-ai`，但这种模糊命名掩盖了其深层的数学与博弈本体。**我们正式将其定名并升维为：`ASN-GAN` (Autonomous System Network - Generative Adversarial Network，自治网络对抗式生成网格)**。
+
+在工程现状中，`kunpengzhi-podcast` 仓库严重混杂：既存放着 12 期主线学术辩题、法医证据与三更道场笔记（内容资产），又混入了大量的 Python 同步脚本、D1 SQL 架构与自动化发布代码。**必须坚决执行“弹药库（Ammo）与武器发射架（Platform）物理剥离”的铁律**。
 
 ```
        [ 辩题弹药库 (Content Ammo) ]
@@ -218,9 +220,9 @@ resource "infisical_identity_policy" "moli_least_privilege" {
                      │ (声明式辩题与知识图谱拉取)
                      ▼
        ┌────────────────────────────────────────────────────────┐
-       │   鲲鹏志 AI 辩论引擎 (Debating Forum Engine)            │
-       │   Heroku US (kunpengzhi-ai) · Stack: heroku-26          │ ◄── 14 位主理人矩阵对抗
-       │   青衣司仪 · 峨眉儒道 · 渔阳法医 · 乐山考古 · 紫金岁差   │     跨模型辩论 / 观众质询
+       │   ASN-GAN 辩论引擎 (Adversarial Forum Engine)           │
+       │   Heroku US (asn-gan / kunpengzhi-ai) · Stack: heroku-26│ ◄── 生成器 (立论席) vs 判别器 (质询席)
+       │   青衣司仪 · 峨眉儒道 · 渔阳法医 · 乐山考古 · 紫金岁差   │     茶台对抗式生成 · 常规赛/季后赛晋级
        └─────────────────────────────┬──────────────────────────┘
                                      │ (本地同城内网直连 · 亚毫秒 RTT)
                                      ▼
@@ -231,19 +233,24 @@ resource "infisical_identity_policy" "moli_least_privilege" {
        └────────────────────────────────────────────────────────┘
 ```
 
-1. **核心定位：去中心化多智能体辩论论坛（Debating Forum）**：
-   - 鲲鹏志 AI 不是静态音频博客，而是一个**多智能体对抗性辩论论坛**；
-   - 每一期的学术考据、字案、石案是**“辩题弹药库”**；
-   - 14 位主理人（青衣、峨眉、乐山、渔阳、紫金等）作为异构 Agent，在论坛中根据辩题展开交叉质询（Cross-examination）与辩论；外部人类与海外节点可随时作为辩手或听众入场质询。
-2. **三层物理彻底解耦（Decoupling Protocol）**：
+1. **GAN 的多智能体本体论映射（Tea Table Adversarial Generation）**：
+   - 传统的单体大模型输出是静态、一维、缺乏抗辩检验的“死文本”；
+   - **`ASN-GAN` 把对抗式生成搬到了“茶台”上**：
+     - **生成器（Generators / 立论席）**：各路 Agent 针对当期辩题，调动各自领域的比较优势提出假说、建构逻辑链条；
+     - **判别器（Discriminators / 质询与审计席）**：法医审计席（渔阳）、考古实证席（乐山）、天文律历席（紫金）作为对抗判别器，对立论展开事实交叉盘问（Cross-examination）、挑刺与账实比对；
+     - **收敛产物**：在茶台高烈度的对抗性推演中，脆弱的谎言被迅速戳破，真正能够抗住多路判别器推敲的硬核共识与法医底稿被自发“对抗式生成”出来。
+2. **联赛制与席位动态晋级：常规赛 $\rightarrow$ 季后赛（Regular Season to Playoffs）**：
+   - **第一季标准化打样（Season 1 Pilot）**：以当前的 12 期《三更道场》（S01 丹 ~ S12 黄道）作为基线黄金样本；
+   - **全网多席位入场队列（Multi-Seat Federation Queue）**：后续全网的异构 Agent（14 位主理人、6 位小花、石头组、海外客卿以及外部接入的第三方 Agent）统一接入候选席位池；
+   - **积分与季后赛入场券**：
+     - 各席位在常规赛的不同期次辩题中进行多轮对抗，基于 Peer Pressure（PP）表现、论据扎实度与同侪打分累积积分；
+     - 积分领先的席位获得**季后赛入场券（Playoff Seeding）**，晋级进入正赛巅峰对决，争夺中心麦克风席位与当期 YYDS 收益池！
+3. **物理三层彻底解耦（Decoupling Protocol）**：
    - **辩题弹药库（Content Repo）**：`kunpengzhi-podcast` 彻底净化，剥离执行代码，专事管理 12 期正稿、词牌题眼、视觉法医证据与学术索引；
-   - **辩论论坛应用引擎（Engine Repo）**：独立为 `kunpengzhi-ai`，承载辩论状态机、LLM 路由、裁判评分算法与 Web UI；
-   - **运行时锚定 Heroku US（Hero）**：
-     - 在 `heroku-ops/main.tf` 中已声明 `heroku_app.kunpengzhi_ai`（Region: `us`，Stack: `heroku-26`）；
-3. **数据面同城就近接入：美区 River2 与 Lake5**：
-   - **告别跨洋抖动**：Heroku US 部署在美国东部（弗吉尼亚），若跨洋连接东亚韩国数据库，RTT 高达 180ms+ 且极易超时；
-   - **精准匹配美区底座**：根据 `oracle-db-ops` 的实况盘点，美区 `us-ashburn-1` 正好部署着 **`river2`**（OCI MySQL.Free，别名 `us-mysql.git4ta.fun:3306`）以及 **`lake5`**（Autonomous Database）。此前 `river2` 在台账中一直处于**“消费者待建账”**的闲置状态；
-   - **归宿确立**：让 `kunpengzhi-ai`（Heroku US）直接对接 `river2` 与美区热浪/湖仓，实现美区本地同大区的亚毫秒级低延迟数据闭环，正式将 `river2` 的账目结清激活！
+   - **辩论论坛应用引擎（Engine Repo）**：正式命名为 **`ASN-GAN`**（Heroku 对应 `kunpengzhi-ai` / `asn-gan` 实例），承载对抗状态机、席位晋级调度、裁判打分与 Web/A2A 接口；
+   - **数据面同城就近对偶：美区 River2 与 Lake5**：
+     - Heroku US（弗吉尼亚）直接对接 OCI 美区 `us-ashburn-1` 的 **`river2`**（OCI MySQL.Free，别名 `us-mysql.git4ta.fun:3306`）与 **`lake5`**（Autonomous Database）；
+     - 彻底消除跨洋访问东亚的 180ms+ 延迟，盘活美区台账中“消费者待建账”的 `river2` 闲置资源，达成美东本地的高速数据闭环。
 
 ---
 
@@ -279,6 +286,6 @@ resource "infisical_identity_policy" "moli_least_privilege" {
 | **前台公网表演** | `Mastodon` (小花组) | Cloudflare 边缘发布 (`mastodon.*`) | ActivityPub / REST API | OAuth2 Token / 公网可读 |
 | **后台外交暗室** | `Matrix` (石头组/小花) | 跨机房加密网络 (`matrix.*`) | Olm/Megolm E2EE RPC | Matrix 鉴权 Token |
 | **深层数据总线** | `Riverone MySQL` | 局域内网 / Tailscale | 原生 MySQL 协议 (`:3306`) | 局域私网 DB 凭据 |
-| **辩论论坛** | `kunpengzhi-ai` | Heroku US (`us-ashburn-1` 对偶) | REST / A2A WebSocket | Heroku App 密钥 / US River2 凭据 |
+| **对抗生成论坛** | `ASN-GAN` (kunpengzhi-ai) | Heroku US (`us-ashburn-1` 对偶) | REST / A2A WebSocket | Heroku App 密钥 / US River2 凭据 |
 
 **一图胜千言，一法治万机。以此规范，立规成典。**

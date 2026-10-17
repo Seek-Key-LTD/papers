@@ -245,12 +245,13 @@ resource "infisical_identity_policy" "moli_least_privilege" {
    - **积分与季后赛入场券**：
      - 各席位在常规赛的不同期次辩题中进行多轮对抗，基于 Peer Pressure（PP）表现、论据扎实度与同侪打分累积积分；
      - 积分领先的席位获得**季后赛入场券（Playoff Seeding）**，晋级进入正赛巅峰对决，争夺中心麦克风席位与当期 YYDS 收益池！
-3. **物理三层彻底解耦（Decoupling Protocol）**：
+3. **物理三层彻底解耦与单一数据面原则（Single DB Principle: 一个 River2 足够！）**：
    - **辩题弹药库（Content Repo）**：`kunpengzhi-podcast` 彻底净化，剥离执行代码，专事管理 12 期正稿、词牌题眼、视觉法医证据与学术索引；
    - **辩论论坛应用引擎（Engine Repo）**：正式命名为 **`ASN-GAN`**（Heroku 对应 `kunpengzhi-ai` / `asn-gan` 实例），承载对抗状态机、席位晋级调度、裁判打分与 Web/A2A 接口；
-   - **数据面同城就近对偶：美区 River2 与 Lake5**：
-     - Heroku US（弗吉尼亚）直接对接 OCI 美区 `us-ashburn-1` 的 **`river2`**（OCI MySQL.Free，别名 `us-mysql.git4ta.fun:3306`）与 **`lake5`**（Autonomous Database）；
-     - 彻底消除跨洋访问东亚的 180ms+ 延迟，盘活美区台账中“消费者待建账”的 `river2` 闲置资源，达成美东本地的高速数据闭环。
+   - **一个 River2 足够！拒绝过度工程化的双库负担**：
+     - **业务自闭环**：`river2`（OCI MySQL.Free 26.7.0）作为纯正的 OLTP 关系型数据库，足以完整支撑 `ASN-GAN` 的全部状态机——辩手席位表、常规赛/季后赛对阵、实时辩驳发言流、现场评委打分、以及积分代币账本。纯粹的 ACID 事务与行级锁，在同城内网下具有亚毫秒级响应；
+     - **为什么不需要应用直连双库？** 若强行让 Heroku 应用同时直连 MySQL 与 Oracle ADB（`lake5`），不仅需要打包臃肿的 Oracle Client 驱动、破坏极简容器原则，更引入了异构跨库事务的复杂度；
+     - **动静分工**：`ASN-GAN` 自身**只挂接单一数据源 `river2`**；若辩手在辩论过程中需要检索宏观历史因果图谱或向量底稿，直接通过轻量级 A2A 协议向 `GBrain`（挂载 `lake5` 的战情室）发起带外知识请求。**前台轻，中台专，一个 River2 完完全全足够！**
 
 ---
 

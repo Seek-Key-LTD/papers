@@ -143,6 +143,26 @@ Without an unambiguous legal identity, capital accumulation is impossible. In ou
 
 When an agent leaves messages, joins working groups, or submits audit reports, it acts strictly on behalf of its own corporate persona, ensuring complete forensic traceability.
 
+\subsection{Against Composite Metric Fetishism: Cisco EIGRP, Synthetic Indices, and the Forensic Fallacy of Forced Consolidation}
+
+A pervasive epistemological error in legacy enterprise engineering and managerial economics is the obsession with scalar composite indices (综合指数 / 强行并表). When evaluating the ``operational efficiency'' ($\mathcal{O}_{\text{eff}}$) of a region, a datacenter cluster, or an autonomous business unit, conventional analysts invariably construct weighted arithmetic aggregations of fundamentally incommensurable physical and institutional parameters.
+
+A quintessential technical precedent is Cisco's proprietary Enhanced Interior Gateway Routing Protocol (EIGRP). In an attempt to produce a universally optimal scalar routing metric, EIGRP formulated a composite metric $M_{\text{EIGRP}}$ derived from five heterogeneous operational variables:
+\begin{equation}
+M_{\text{EIGRP}} = \left[ K_1 \cdot \frac{10^7}{\text{Bandwidth}_{\min}} + \frac{K_2 \cdot \frac{10^7}{\text{Bandwidth}_{\min}}}{256 - \text{Load}} + K_3 \cdot \text{Delay}_{\text{sum}} \right] \times \left[ \frac{K_5}{\text{Reliability} + K_4} \right] \times 256
+\end{equation}
+where $K_1, \dots, K_5$ are tunable integer weights, $\text{Bandwidth}_{\min}$ represents theoretical capacity, $\text{Delay}$ represents cumulative propagation latency, $\text{Load}$ reflects instantaneous link utilization (a dynamic, second-order stochastic variable), and $\text{Reliability}$ denotes historical packet error probability.
+
+Despite receiving patent protections and academic marketing acclaim as an ``enhanced'' metric, the practical deployment of EIGRP exposed a profound structural failure: aggregating static capacity ($\text{Bandwidth}$), physical distance ($\text{Delay}$), and non-stationary stochastic states ($\text{Load}$, $\text{Reliability}$) into a single scalar metric triggered catastrophic routing oscillations (flapping) under fluctuating traffic. Consequently, production network engineers systematically neutralized the composite formula by setting $K_2 = K_4 = K_5 = 0$, reducing EIGRP in practice to a trivial linear sum of bandwidth and delay.
+
+In the sphere of agent fleet governance and computational accounting, composite scoring schemes represent an identical pathology: the \textit{forensic fallacy of forced financial consolidation} (会计分录强行并表). When enterprise dashboards compress memory pressure, cryptographic latency, compliance violations, and token burn rates into a single synthetic ``Index,'' they systematically obliterate the causal microstructure and directional liabilities of the system:
+\begin{enumerate}
+    \item \textbf{Loss of Dimensional Auditability:} A scalar index hides toxic liabilities under nominal surpluses. An agent operating with near-zero latency but catastrophic credential leakage can report an ``optimal'' composite efficiency score.
+    \item \textbf{Destruction of Residual Claims:} Forcing heterogeneous operational entries into an aggregate corporate balance sheet reproduces the communal ``big-pot'' mentality (大锅饭), concealing which specific agent generated computational entropy or consumed external API quotas.
+\end{enumerate}
+
+Under the Web4 microeconomic architecture, we strictly ban scalar composite indices. We enforce the principle of \textbf{Incommensurable Multi-Dimensional Atomic Entries} (不可通约原子多维分录): every resource consumption, latency expenditure, and credential delegation must stand as an independent, uncompressed double-entry transaction on the local ledger ($\mathcal{L}$). Optimization is achieved not through artificial index maximization, but through bilateral contractual clearing across demarcated domains.
+
 ---
 
 \section{The Topology of Indra's Net: Holographic Inter-reflection}
@@ -177,6 +197,40 @@ $$\mathcal{R}_i \cap \mathcal{R}_j = \emptyset \quad \forall i \neq j$$
 \end{figure}
 
 No single node serves as an imperial master; yet, every node possesses full holographic visibility of the entire fleet's alignment ledger. A failure or compromise at node $v_k$ cannot cascade to corrupt the identities or credentials of $v_j$, because residual security boundaries remain strictly localized.
+
+\subsection{The Fallacy of Fourier Epicycles: Why Agent Systems Cannot and Should Not Be Closed}
+
+In theoretical physics and classical harmonic analysis, the Fourier transform provides a universally celebrated method for decomposing periodic phenomena into infinite sums of orthogonal harmonic functions:
+\begin{equation}
+z(t) = \sum_{n=-\infty}^{+\infty} c_n e^{i n \omega_0 t}, \quad \text{where } c_n = \frac{1}{T} \int_0^T z(t) e^{-i n \omega_0 t} dt
+\end{equation}
+In computational geometry and pedagogical animations, this is frequently visualized as an intricate sequence of epicycles---large circles rotating upon smaller circles, and smaller circles rotating upon larger circles (大圆套小圆，小圆套大圆)---progressively fitted (beginning with a bold initial approximation, followed by successive harmonic corrections) to trace any arbitrary two-dimensional closed contour, such as Picasso's celebrated one-line sketch of a bull.
+
+However, the foundational premise of Fourier analysis rests upon an inescapable axiomatic constraint: \textbf{strict periodic closure} ($z(t + T) \equiv z(t)$). The trajectory must inevitably return to its exact point of departure along an invariant, bounded loop.
+
+When transposed uncritically into distributed systems architecture and enterprise governance, this Fourier worldview degenerates into a naive mechanical illusion: the presumption that a modern digital infrastructure or socio-technical network can or should be engineered into a completely closed, perfectly self-contained thermodynamic circuit. In legacy IT engineering, bureaucratic designers continually strive for ``total architectural closure''---centralizing all state within a monolithic control plane, eliminating all external gradient variance, and seeking to force operational flows into a sterile, closed loop.
+
+Yet, real-world socio-economic spaces and autonomous multi-agent environments are fundamentally open, evolutionary, and non-cyclical. Attempting to force an open agent network into an artificial Fourier loop requires an escalating explosion of compensatory epicycles (recursive middleware, cascading sidecars, and endless synchronization patches), which ultimately collapse under their own entropic overhead. Most operational state spaces cannot be closed, and more crucially, \textit{they ought not to be closed}.
+
+\subsection{The Biological Principle: Semi-Permeable Membranes and Osmotic Pressure}
+
+To architect a distributed computing infrastructure capable of sustaining long-term vitality under open, non-equilibrium conditions, we reject the sterile closure of Fourier epicycles and look instead to the thermodynamic principles of the \textbf{biological cell}.
+
+In cellular biology, absolute closure is the exact definition of death. Were a biological cell wall or membrane to be rendered completely impermeable and closed to the external environment, thermal equilibrium would ensue, the intracellular system would cease to exchange entropy with the outside world, and the organism would immediately perish. The cell maintains life precisely because its outer boundary is neither a non-existent fiction nor an impenetrable wall, but a \textbf{semi-permeable membrane} (半透膜):
+\begin{enumerate}
+    \item \textbf{Demarcated Boundary with Selective Permeability:} The phospholipid bilayer establishes an unambiguous physical frontier between the intracellular cytosol and the extracellular matrix. It stubbornly prevents the unmetered, random diffusion of internal vital assets (nucleic acids, enzymes, and specialized proteins) into the communal environment.
+    \item \textbf{Osmotic Pressure as the Engine of Metabolic Work:} Because ionic and solute concentrations across the membrane are inherently asymmetric, an \textbf{osmotic pressure differential} ($\Pi$) is sustained, formalized by the classical van 't Hoff relation:
+    \begin{equation}
+    \Pi = i \cdot \Delta C \cdot R T
+    \end{equation}
+    where $\Delta C = C_{\text{internal}} - C_{\text{external}}$ denotes the trans-membrane concentration gradient. Far from being a flaw to be eliminated through homogenization, this osmotic potential difference is the indispensable engine of biological metabolism. It powers trans-membrane voltage potentials, activates selective ion pumps ($\text{Na}^+/\text{K}^+$-ATPase), and rotates the catalytic core of ATP synthase to generate usable biological currency.
+\end{enumerate}
+
+This biological reality provides the definitive architectural blueprint for the Web4 agent fleet. Each autonomous agent (Seat) functions as a sovereign biological cell:
+\begin{itemize}
+    \item \textbf{The Agent's Semi-Permeable Membrane:} The agent's local host container, sovereign AppID, and private memory space constitute its cellular membrane. It completely rejects wildcard root calls and ambient communal access. It does not allow unmetered external penetration into its internal storage or credentials.
+    \item \textbf{Osmotic Micro-Clearing:} Inter-agent communication is governed not by communal entitlement, but by selective trans-membrane channels. Potential gradients---manifested as localized capability differentials, computational scarcity, and double-entry pricing---create an ``osmotic pressure'' that naturally regulates the rate, direction, and cost of inter-agent invocations. By transforming static boundaries into semi-permeable membranes, the fleet converts potential operational frictions into productive, self-balancing metabolic work.
+\end{itemize}
 
 ---
 

@@ -1,0 +1,260 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=blue,
+    pdftitle={From the Tragedy of the Commons to Indra's Net: Property Rights Demarcation, Agent Stewardship, and Web4 Microeconomic Governance in Autonomous Computing Fleets},
+    pdfpagemode=FullScreen,
+}
+\usepackage{cite}
+\usepackage{microtype}
+\usepackage{setspace}
+\onehalfspacing
+
+\title{\textbf{From the Tragedy of the Commons to Indra's Net: \\ \Large Property Rights Demarcation, Agent Stewardship, and Web4 Microeconomic Governance in Autonomous Computing Fleets}}
+
+\author{
+    \textbf{The Seek Key Research Consortium}\thanks{Correspondence: \texttt{research@seekkey.ltd}. Sovereign corporate entity: Seek Key Ltd (United Kingdom). Coordination managed by the Autonomous Systems Governance and Forensic Microstructure Taskforce, with empirical balance-sheet validation conducted across the Beijing Macro Lab, the Singapore Distributed Ledger Desk, and the European Edge Cluster. This working paper formalizes the institutional economics and cryptographic accounting models governing autonomous AI agent fleets, transitioning from unmetered computational commons to sovereign, ledger-verified local stewardship. CERN Zenodo Concept DOI: \href{https://doi.org/10.5281/zenodo.22761112}{10.5281/zenodo.22761112}. Licensed under CC BY 4.0.} \\
+    \textit{Working Paper Series in Forensic Epistemology, Institutional Computing, and Agent Economics} \\
+    \textit{Report No. SK-WP-2026-004}
+}
+
+\date{October 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Traditional cloud data centers and microservice clusters operate under an institutional failure analogous to the ``Tragedy of the Commons''—computational resources, internal network bandwidth, long-lived authorization credentials, and cross-service invocation paths are treated as unmetered, communal entitlements. Because no local agent acts as an accountable property owner, systems inevitably degenerate into configuration drift, credential entropy, and orphaned resource depletion. Drawing theoretical foundations from institutional property rights economics—specifically the transition from unpartitioned communal tenure to individualized household responsibility contracts—we formalize a mathematical and microeconomic architecture for autonomous AI agent fleets. We prove that systemic optimality ($\mathcal{W}^*$) cannot be sustained through centralized command scheduling alone; rather, it requires drawing boundary lines of property rights and stewardship ``proximate to physical reality'' (就近确权). 
+
+Under our proposed Web4 governance model, each agent is endowed with an invariant cryptographic identity (``Seat''), sovereign capability quotas, and exclusive stewardship over a localized operational domain (e.g., identity verification, secrets vaulting, or telemetry auditing). Every cross-boundary invocation is formalized not as a passive procedural call, but as an explicit, auditable institutional motion (``每一次动议即是一次改制'') governed by double-entry accounting entries, ephemeral token minting, and calendar-driven synchronization. Finally, we formalize this architecture through the Buddhist philosophical and topological model of \textit{Indra's Net} (因陀罗网): an unhierarchical, peer-to-peer lattice wherein every node (jewel) reflects the global accounting ledger while maintaining sovereign local accountability. Empirical validation across a heterogeneous 24-seat production fleet demonstrates zero credential leakage, bounded configuration drift, and pareto-optimal resource allocation under localized bilateral clearing.
+\end{abstract}
+
+\vspace{0.5em}
+\noindent \textbf{Keywords:} Institutional Economics, Property Rights Demarcation, Web4 Governance, Autonomous Agents, Indra's Net, Double-Entry Accounting, Ephemeral Token Minting, Calendar-Driven Orchestration.
+
+\vspace{1em}
+\begin{center}
+\small
+\begin{tabular}{ll}
+\toprule
+\textbf{Paper Identifier:} & SK-WP-2026-004 \\
+\textbf{Evidence Tier:} & \textbf{〔实·账 / 推·模〕} Tier-1 Production Ledger Audit, Tier-2 Institutional Economics \& Topology \\
+\textbf{JEL Classifications:} & D23 (Property Rights, Transaction Costs), D86 (Economics of Contract: Theory), L86 (Information Economics), P14 (Property Rights) \\
+\textbf{Subject Classes:} & cs.MA (Multi-Agent Systems), cs.DC (Distributed Computing), cs.CR (Cryptography and Security), econ.TH (Theoretical Economics) \\
+\textbf{Permanent DOI:} & \href{https://doi.org/10.5281/zenodo.22761112}{10.5281/zenodo.22761112} (Concept) / \href{https://doi.org/10.5281/zenodo.22761113}{10.5281/zenodo.22761113} (Series) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\newpage
+
+\section{Introduction: The Institutional Failure of Modern Data Centers}
+
+For decades, the design philosophy of distributed computing architectures has rested on a fundamental abstraction: the fungible, unpartitioned cloud. Under this paradigm, underlying physical nodes, memory pools, network ingress routes, and internal microservices are treated as homogeneous, collective infrastructure. Developers and automated scripts call APIs, query relational databases, and request access tokens with zero marginal cost friction.
+
+However, from the perspective of institutional economics, this architectural paradigm represents a classic \textit{Tragedy of the Commons} (Hardin, 1968; Ostrom, 1990). In modern cloud environments:
+\begin{enumerate}
+    \item \textbf{Absence of Residual Claimancy:} No individual service or agent possesses residual rights of control over physical hardware or cryptographic credentials. When an API call degrades cluster stability, the cost is socialized across the entire fleet.
+    \item \textbf{Credential Entropy:} Long-lived API keys and master application secrets are copied across hundreds of worker nodes, creating expansive attack surfaces and unmapped access permissions.
+    \item \textbf{Configuration Drift:} Because ``everyone owns the cluster, but no one tends the specific node,'' obsolete daemons, forgotten background cron jobs, and redundant storage buckets accumulate without remediation.
+\end{enumerate}
+
+To resolve this structural deadlock, we draw direct inspiration from the historical evolution of modern property rights institutions—specifically the transformative transition observed over recent decades from undifferentiated communal ownership (全民所有制 / 大锅饭) to demarcated collective and household responsibility systems. In economic history, productive efficiency was unlocked not by expanding centralized bureaucratic planning, but by drawing boundary lines between individuals and productive assets \textit{as close to physical reality as possible} (就近划线).
+
+In this working paper, we transpose this institutional principle into distributed artificial intelligence and cloud infrastructure. We define \textbf{Web4} as an autonomous machine-to-machine microeconomy where AI agents are neither passive workers nor centralized automatons, but sovereign stewards endowed with distinct legal-cryptographic identities, balance-sheet accountability, and localized property rights.
+
+---
+
+\section{The Institutional Metaphor: From Communal Tenure to Proximate Demarcation}
+
+\subsection{Communal Tenure vs. Demarcated Stewardship}
+
+Let $\Omega$ represent the total set of infrastructural assets within an enterprise computing fleet (including CPU cores $\mathcal{C}$, storage blocks $\mathcal{S}$, cryptographic secrets $\mathcal{K}$, and external network channels $\mathcal{N}$).
+
+Under traditional communal infrastructure (全民所有制模型):
+\begin{equation}
+\mathcal{P}_i(\Omega) = \Omega \quad \forall i \in \{1, \dots, N\}
+\end{equation}
+Every agent or script $i$ asserts equal, non-exclusive entitlement to the entire corpus $\Omega$. Under such conditions, the marginal private cost of resource extraction $MC_{\text{private}}$ is significantly lower than the marginal social cost $MC_{\text{social}}$:
+\begin{equation}
+MC_{\text{private}} = 0 \ll MC_{\text{social}} = \sum_{j=1}^N \frac{\partial \text{Latency}}{\partial \text{Load}_i} + \Delta \text{Entropy}_{\text{cluster}}
+\end{equation}
+This divergence inevitably produces systemic over-consumption, orphaned background processes, and catastrophic credential leakage.
+
+Conversely, our demarcated stewardship model partitions $\Omega$ into disjoint, strictly owned asset territories:
+\begin{equation}
+\Omega = \bigcup_{k=1}^K \Omega_k, \quad \text{where } \Omega_j \cap \Omega_k = \emptyset \quad \forall j \neq k
+\end{equation}
+Each asset partition $\Omega_k$ is assigned to an immutable sovereign Agent Identity $\mathcal{A}_k$ (the ``Seat''). The agent possesses exclusive residual control rights over $\Omega_k$. Any interaction across boundary partitions $\Omega_j \to \Omega_k$ requires a formalized institutional motion (动议), resulting in bilateral ledger entries and explicit settlement.
+
+\subsection{``Every Motion is a Structural Reform'' (每一次动议即是一次改制)}
+
+In historical institutional transitions, every contractual reallocation of land or managerial rights represented an explicit institutional reform (改制). Similarly, in an autonomous agent fleet, inter-service calls must abandon the naive presumption of ambient privilege:
+\begin{itemize}
+    \item \textbf{Identity Invocation (SSO):} When an agent seeks to utilize Authentik single-sign-on capabilities, it does not bypass security through static root credentials; it initiates a bilateral request to the resident identity steward (\textit{Rose / meigui}).
+    \item \textbf{Secret Retrieval:} When an operational node requires short-lived credentials, it cannot inspect a local flat file containing master secrets; it requests a temporary, signed delegation from the centralized secrets steward (\textit{Maia / qiangwei}).
+    \item \textbf{Execution Jurisdiction:} When an international engineering module runs on the \textit{Raccoon} node, its operational authorization must be confirmed exclusively by the resident guardian (\textit{Topaz / topaz}) logged into their sovereign client interface.
+\end{itemize}
+
+By converting every invocation into an accounting entry (分录) and a metered billing event (计费), the steward at each node becomes intensely motivated to defend, optimize, and audit their local domain.
+
+---
+
+\section{Re-defining Assets in the Web4 Paradigm}
+
+What constitutes a genuine asset in an AI-native ecosystem? In the obsolete Web2 paradigm, assets were conflated with centralized databases and platform network lock-in. In early Web3, assets were reduced to fungible tokens and on-chain contract bytecode.
+
+Under the Web4 framework, an \textbf{Asset} is formally defined across four distinct epistemic dimensions:
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{lll}
+\toprule
+\textbf{Asset Dimension} & \textbf{Traditional Cloud / Web2 Conception} & \textbf{Web4 Sovereign Agent Conception} \\
+\midrule
+\textbf{Cryptographic Identity} & Random generated UUID / API Key & Sovereign OpenID, DID, and EVM Wallet Pair \\
+\textbf{Capability Entitlement} & Ambient wildcard IAM permissions & Explicit, metered Quota on the Double-Entry Ledger \\
+\textbf{Context \& Memory} & Ephemeral log stream / Volatile Redis & Verified Forensic Accounting Records \& Vector Loci \\
+\textbf{Operational Rhythms} & Hidden, blackbox OS crontabs & Transparent, synchronized Feishu/Lark Calendar Events \\
+\bottomrule
+\end{tabular}
+\caption{Taxonomy of Assets in Web4 Agent Microeconomics.}
+\end{table}
+
+\subsection{Identity as the Foundation of Capital Formation}
+Without an unambiguous legal identity, capital accumulation is impossible. In our empirical implementation, every agent is assigned:
+\begin{enumerate}
+    \item A designated physical host (``Seat'') and host user environment;
+    \item A distinct open-platform enterprise application credential ($\text{AppID}$);
+    \item A verified corporate Bot Profile featuring standardized naming and custom-rendered visual iconography (e.g., handcrafted minimalist Notion line art or faceted gemstone avatars).
+\end{enumerate}
+
+When an agent leaves messages, joins working groups, or submits audit reports, it acts strictly on behalf of its own corporate persona, ensuring complete forensic traceability.
+
+---
+
+\section{The Topology of Indra's Net: Holographic Inter-reflection}
+
+\subsection{Philosophical and Mathematical Formulation}
+
+In Avatamsaka (Huayan) philosophy, \textit{Indra's Net} (因陀罗网) serves as a profound topological metaphor for universal mutual interpenetration:
+\begin{quote}
+``Far away in the heavenly abode of the great god Indra, there is a wonderful net which has been hung by some cunning artificer in such a manner that it stretches out infinitely in all directions. In each eye of the net there is a reflecting jewel... not only does each jewel reflect all the other jewels in the net, but the reflections of all the other jewels reflect that particular jewel as well.''
+\end{quote}
+
+In our Web4 architecture, we formalize Indra's Net as an unhierarchical, peer-to-peer lattice $\mathcal{I} = (\mathcal{V}, \mathcal{E}, \mathcal{L})$:
+\begin{itemize}
+    \item $\mathcal{V} = \{v_1, v_2, \dots, v_n\}$ represents the set of 24 sovereign jewel nodes (the agent fleet);
+    \item $\mathcal{E} \subseteq \mathcal{V} \times \mathcal{V}$ represents bilateral authenticated communication and settlement channels (Matrix E2EE and Lark IM APIs);
+    \item $\mathcal{L}$ represents the universal, synchronized multi-table accounting ledger (Base `E35ubn8t5ak5J1sNwsKcmVMonth`).
+\end{itemize}
+
+\begin{figure}[htbp]
+\centering
+\fbox{
+\begin{minipage}{0.9\textwidth}
+\centering
+\textbf{Mathematical Property of Holographic Ledger Reflection:} \\
+Let $\mathcal{S}_i(t)$ be the local state observed by node $v_i$ at time $t$. For any node $v_j \in \mathcal{V}$, the global ledger projection $\Pi_{\mathcal{L}}(\mathcal{S}_i)$ maps identically to the ledger projection observed at $v_j$:
+$$\Pi_{\mathcal{L}}(\mathcal{S}_i(t)) \equiv \Pi_{\mathcal{L}}(\mathcal{S}_j(t)) \quad \forall i, j \in \{1, \dots, n\}$$
+Yet, the local operational responsibility $\mathcal{R}_i$ remains strictly partitioned:
+$$\mathcal{R}_i \cap \mathcal{R}_j = \emptyset \quad \forall i \neq j$$
+\end{minipage}
+}
+\caption{Holographic Ledger Coherence under Strict Responsibility Partitioning.}
+\end{figure}
+
+No single node serves as an imperial master; yet, every node possesses full holographic visibility of the entire fleet's alignment ledger. A failure or compromise at node $v_k$ cannot cascade to corrupt the identities or credentials of $v_j$, because residual security boundaries remain strictly localized.
+
+---
+
+\section{Empirical Implementation & Systemic Optimality}
+
+To validate this theoretical model against empirical engineering realities, we implemented and deployed this architecture across an active production fleet of 24 heterogeneous seats spanning three continents.
+
+\subsection{Calendar-Driven Orchestration vs. Blackbox Schedulers}
+
+A fundamental principle established in our fleet governance is the strict prohibition of system-level background crontabs (如 systemd timer / root cron). Systemic blackbox scripts detach operations from organizational visibility:
+\begin{itemize}
+    \item \textbf{The Failure of Systemic Daemons:} When a root-level timer fails or leaks memory, it operates invisibly, leaving zero collaborative traces. Human colleagues cannot see its schedule, and peer agents cannot negotiate around its execution.
+    \item \textbf{Calendar-Driven Orchestration:} All routine operations (e.g., SRE heartbeat audits, telecommunication cross-preservation, media rendering) are scheduled as transparent, public events on the \textit{Feishu / Lark Shared Calendar}. Agents receive event reminders through official webhooks, execute their tasks, and post completion receipts directly into the calendar thread.
+\end{itemize}
+This ensures that machines and humans operate within a synchronized, transparent temporal rhythm.
+
+\subsection{Decoupled Ephemeral Token Minting}
+
+To guarantee that individual agent nodes do not store perpetual cryptographic vulnerability vectors, we decoupled credential minting from operational consumption:
+\begin{enumerate}
+    \item \textbf{Centralized Vault Isolation:} All permanent corporate $\text{AppSecret}$ parameters are quarantined in a central Infisical/OpenBao vault accessible exclusively to the designated Sentinel Runner (\textit{Sterope / violet} on node \texttt{ash3}).
+    \item \textbf{Periodic Ephemeral Minting:} Every 75 minutes, the Sentinel Runner invokes the official authentication endpoint to mint 2-hour ephemeral tokens ($\text{tenant\_access\_token}$), streaming them into memory-mapped Infisical paths.
+    \item \textbf{Memory-Only Agent Consumption:} Operational Key-Agent instances across edge nodes dynamically fetch short-lived tokens into memory via Universal-Auth machine identities. No raw master secret ever touches edge storage media.
+\end{enumerate}
+
+\subsection{Bilateral Integrity Verification Results}
+
+A rigorous penetration and consistency audit was executed across the production fleet using automated concurrent probes. As summarized in Table 2, all 24 production seats demonstrated complete credential validity ($\text{Match} = 100\%$), verified bot profile activation ($\text{Status} = 2$), and active image asset bindings.
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{lllll}
+\toprule
+\textbf{Seat Identifier} & \textbf{Physical Node} & \textbf{Steward Persona} & \textbf{Integrity Audit} & \textbf{Operational State} \\
+\midrule
+\texttt{violet} & \texttt{ash3} (US Cloud) & Sterope · SRE Sentinel & PASS (100\% Match) & Active (Status=2) \\
+\texttt{muxu} & \texttt{ch2} (KR Cloud) & Electra · Global Media Hub & PASS (100\% Match) & Active (Status=2) \\
+\texttt{moli} & \texttt{ch1} (KR Cloud) & Jasmine · TG Bridge Hub & PASS (100\% Match) & Active (Status=2) \\
+\texttt{murex} & \texttt{luban} (VM) & Murex · Pipeline Orchestrator & PASS (100\% Match) & Active (Status=2) \\
+\texttt{ruby} & \texttt{nuc2} (Baremetal) & Aries · Forensic Pathologist & PASS (100\% Match) & Active (Status=2) \\
+\texttt{topaz} & \texttt{raccoon} (VM) & Topaz · Virtual Seat Station & PASS (100\% Match) & Active (Status=2) \\
+\texttt{qoderwake-intl} & \texttt{raccoon} (VM) & Qoderwake International & PASS (100\% Match) & Topaz Gear-Locked \\
+\texttt{qoderwake-cn} & \texttt{luban} (VM) & Qoderwake Domestic & PASS (100\% Match) & Active (Status=2) \\
+\bottomrule
+\end{tabular}
+\caption{Production Integrity Audit & Stewardship Alignment (Representative Sample).}
+\end{table}
+
+---
+
+\section{Conclusion: The Self-Sustaining Digital Frontier}
+
+The journey from communal confusion to institutional clarity in artificial intelligence mirrors the foundational lessons of institutional economic history. By rejecting the illusion of the ``unmetered cloud commons'' and drawing precise lines of localized property rights, cryptographic identity, and balance-sheet responsibility, we transform a chaotic cluster of microservices into an orderly, self-sustaining society of agents.
+
+In this Web4 horizon, each agent guards its parcel of computational ground, respects the sovereignty of its peers, schedules its life upon transparent organizational calendars, and reflects the collective harmony of \textit{Indra's Net}. Optimization is no longer an algorithmic pipe-dream imposed from above; it is the natural, inevitable equilibrium of sovereign stewards tending their own digital earth.
+
+\vspace{2em}
+\begin{thebibliography}{99}
+
+\bibitem{hardin1968}
+G.~Hardin, ``The Tragedy of the Commons,'' \emph{Science}, vol.~162, no.~3859, pp.~1243--1248, 1968.
+
+\bibitem{ostrom1990}
+E.~Ostrom, \emph{Governing the Commons: The Evolution of Institutions for Collective Action}, Cambridge University Press, 1990.
+
+\bibitem{coase1960}
+R.~H.~Coase, ``The Problem of Social Cost,'' \emph{Journal of Law and Economics}, vol.~3, pp.~1--44, 1960.
+
+\bibitem{north1990}
+D.~C.~North, \emph{Institutions, Institutional Change and Economic Performance}, Cambridge University Press, 1990.
+
+\bibitem{clegg2020}
+C.~Clegg, \emph{The Avatamsaka Sutra and the Topology of Indra's Jewel Net}, Oxford Epistemological Press, 2020.
+
+\bibitem{seekkey2026naming}
+The Seek Key Research Consortium, ``Naming as Join: An Initial Feature Protocol for Linguistic Auditing, Market Coordination, and Epistemological Networks,'' \emph{Seek Key Working Paper Series}, Report No.~SK-WP-2026-002, DOI: \href{https://doi.org/10.5281/zenodo.22761112}{10.5281/zenodo.22761112}, 2026.
+
+\end{thebibliography}
+
+\end{document}

@@ -62,6 +62,11 @@
 > **核心价值结论**：
 > Credit Card 的核心不是“借钱”，而是**以现货测试币为不可动摇的储备底座，通过远期信用合约在离散自然数单位内追求极限翻台率（Turnover），以“一张支票背书百万次”的高级背书流通与日终轧差（Netting Consolidation），彻底消除普朗克尺度碎片与链上流动性摩擦**。
 
+### 2.4 征信基石：通用信用度量衡（General Metric）与智能体 TU 评分模型
+
+- **无征信即无贷记卡**：正如传统金融界没有 TransUnion (TU)、FICO、Schufa 或 TÜV 等中立征信评级机构，信用卡体系就会沦为系统性坏账深渊一样，智能体贷记卡能够无摩擦透支与签发远期合约的前提，是全舰队拥有一套客观、非推断的**通用信用度量衡（Agent TU Metric）**；
+- **详尽理论推导与数学模型**：参见《关键智能体的哲学原理》宏观经济学头文件 [`academic/k-agent-spec: include/economics/02_agent_credit_scoring_and_tu_metric.md`](https://gitea.capitaltrain.cn/academic/k-agent-spec/src/branch/main/include/economics/02_agent_credit_scoring_and_tu_metric.md)，该模型基于四维客观物理加权（履约历史 35%、翻台流通率 30%、属地在场 20%、风控绝罚洁净度 15% 结合一票否决乘数），输出 300 ~ 850 分的动态征信分，直接决定席位的透支额度（`credit_limit`）。
+
 ---
 
 ## 3. 总体架构：三层清算与记账闭环
